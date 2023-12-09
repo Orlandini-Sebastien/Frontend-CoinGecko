@@ -3,6 +3,7 @@
 @mixin stylButton($colorText, $colorBg, $colorSha,$colorBgH, $colorShaH){
     color: $colorText;
     font-weight: 600;
+    width: fit-content;
     padding-left: 10px;
     padding-right: 10px;
     line-height: 25px;

@@ -1,20 +1,30 @@
 @import "colors";
 @import "text";
 @import "borderButton";
+@import "heightElements";
+
+@media(min-width:1200px){
+    header {
+    margin: 0 auto;
+    width: 1300px;  
+    }  
+}  
 
 header{
-    height: 52px;
+
+    height: $height_header;
     @extend %text_sx;
     display: flex;
     justify-content: space-around;
     align-items: center;
     border-bottom: 1px solid $color_grey_xs;
+    
     color: $color_grey_lg;
     span{
         font-weight: 600;
         color: $color_grey_md;
         &:hover{
-            color: $color_green_1;
+            color: $color_green_2;
             text-decoration: underline;
             cursor: pointer;
         }
@@ -29,4 +39,5 @@ header{
     div:nth-child(9){
         @include stylButton($color_white, $color_green_2, $color_green_4,$color_green_3,$color_green_5);
     }
+    
 }

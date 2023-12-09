@@ -15,17 +15,11 @@ body{
         }
     }
 }
-@mixin carre($cote){
-    width: $cote;
-    height: $cote;
-}
-
-
-
 
 
 */
 @import url(../css/reset.css);
 
-@import "header";
+@import "0header";
+@import "1mainNav";
 

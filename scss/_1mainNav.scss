@@ -1,0 +1,60 @@
+@import "heightElements";
+@import "colors";
+@media(min-width:1200px){
+    main nav{
+    margin: 0 auto;
+    width: 1300px;  
+    }  
+}  
+main nav{
+    @extend %text_lg;
+    color:$color_grey_md;
+    img{
+        width: 19%;
+        object-fit: cover;
+        object-position: center;
+        cursor: default;
+    }
+    height: $height_main_nav;
+    border-bottom: 1px solid $color_grey_xs;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    &>div{   
+        cursor: pointer;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &>div:nth-child(1){
+        width: 55%;
+        height: 100%;
+    }
+    &>div:nth-child(2){
+        width: 30%;
+        height: 100%;
+        span{
+            cursor: default;
+        }
+        div{
+            display: flex;
+            align-items: center;
+            height: 60%;
+            input{
+                height: 100%;
+                border:none;
+                background-color: $color_grey_xs;
+                color: $color_grey_lg;
+                width: 75%;
+            }
+        }
+        div:last-child{
+            background-color: $color_grey_xs;
+            border-radius: 10px;
+        }
+    }
+}
+
+

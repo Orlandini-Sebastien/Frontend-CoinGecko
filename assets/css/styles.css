@@ -15,13 +15,6 @@ body{
         }
     }
 }
-@mixin carre($cote){
-    width: $cote;
-    height: $cote;
-}
-
-
-
 
 
 */
@@ -32,10 +25,17 @@ header {
   font-family: "Inter", sans-serif;
 }
 
+main nav {
+  font-size: 14px;
+  line-height: 20px;
+  font-family: "Inter:wght@400", sans-serif;
+  font-weight: 600;
+}
+
 @media (min-width: 1200px) {
-  header div {
+  header {
     margin: 0 auto;
-    width: 1200px;
+    width: 1300px;
   }
 }
 header {
@@ -44,7 +44,6 @@ header {
   justify-content: space-around;
   align-items: center;
   border-bottom: 1px solid #E8E8E8;
-  border: solid black 2px;
   color: #64748b;
 }
 header span {
@@ -62,6 +61,8 @@ header label {
 header div:nth-child(8), header div:nth-child(7) {
   color: #0F172A;
   font-weight: 600;
+  width: -moz-fit-content;
+  width: fit-content;
   padding-left: 10px;
   padding-right: 10px;
   line-height: 25px;
@@ -78,6 +79,8 @@ header div:nth-child(8):hover, header div:nth-child(7):hover {
 header div:nth-child(9) {
   color: #ffffff;
   font-weight: 600;
+  width: -moz-fit-content;
+  width: fit-content;
   padding-left: 10px;
   padding-right: 10px;
   line-height: 25px;
@@ -91,6 +94,60 @@ header div:nth-child(9):hover {
   box-shadow: 0px 3px #227203;
 }
 
+@media (min-width: 1200px) {
+  main nav {
+    margin: 0 auto;
+    width: 1300px;
+  }
+}
 main nav {
+  color: #334155;
+  height: 67.6px;
+  border-bottom: 1px solid #E8E8E8;
   display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+main nav img {
+  width: 19%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  cursor: default;
+}
+main nav > div {
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+main nav > div:nth-child(1) {
+  width: 55%;
+  height: 100%;
+}
+main nav > div:nth-child(2) {
+  width: 30%;
+  height: 100%;
+}
+main nav > div:nth-child(2) span {
+  cursor: default;
+}
+main nav > div:nth-child(2) div {
+  display: flex;
+  align-items: center;
+  height: 60%;
+}
+main nav > div:nth-child(2) div input {
+  height: 100%;
+  border: none;
+  background-color: #E8E8E8;
+  color: #64748b;
+  width: 75%;
+}
+main nav > div:nth-child(2) div:last-child {
+  background-color: #E8E8E8;
+  border-radius: 10px;
 }/*# sourceMappingURL=styles.css.map */
