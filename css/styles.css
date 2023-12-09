@@ -1,0 +1,85 @@
+/*
+body{
+    font-size: $text;
+    @media screen and (min-width:766px){
+        font-size: $text*3;
+    }
+    @media screen and (min-width:1200px){
+        font-size: $text*2;
+    }
+}
+@each $nom, $breackpoint in $grille{
+    @media screen and (min-width:$breackpoint) {
+        .container{
+            width:$breackpoint*0.8;
+        }
+    }
+}
+@mixin carre($cote){
+    width: $cote;
+    height: $cote;
+}
+
+
+
+
+
+*/
+@import url(../css/reset.css);
+header {
+  font-size: 12px;
+  line-height: 16px;
+  font-family: "Inter", sans-serif;
+}
+
+header {
+  height: 52px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 1px solid #E8E8E8;
+  color: #64748b;
+}
+header span {
+  font-weight: 600;
+  color: #334155;
+}
+header span:hover {
+  color: #33FF00;
+  text-decoration: underline;
+  cursor: pointer;
+}
+header label {
+  color: #40ae01;
+}
+header div:nth-child(8), header div:nth-child(7) {
+  color: #0F172A;
+  font-weight: 600;
+  padding-left: 10px;
+  padding-right: 10px;
+  line-height: 25px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  box-shadow: 0px 3px #E8E8E8;
+  cursor: pointer;
+  border: 2px solid #E8E8E8;
+}
+header div:nth-child(8):hover, header div:nth-child(7):hover {
+  background-color: #E8E8E8;
+  box-shadow: 0px 3px #334155;
+}
+header div:nth-child(9) {
+  color: #ffffff;
+  font-weight: 600;
+  padding-left: 10px;
+  padding-right: 10px;
+  line-height: 25px;
+  border-radius: 5px;
+  background-color: #4BCC00;
+  box-shadow: 0px 3px #268102;
+  cursor: pointer;
+}
+header div:nth-child(9):hover {
+  background-color: #40ae01;
+  box-shadow: 0px 3px #227203;
+}/*# sourceMappingURL=styles.css.map */

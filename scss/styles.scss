@@ -1,0 +1,31 @@
+/*
+body{
+    font-size: $text;
+    @media screen and (min-width:766px){
+        font-size: $text*3;
+    }
+    @media screen and (min-width:1200px){
+        font-size: $text*2;
+    }
+}
+@each $nom, $breackpoint in $grille{
+    @media screen and (min-width:$breackpoint) {
+        .container{
+            width:$breackpoint*0.8;
+        }
+    }
+}
+@mixin carre($cote){
+    width: $cote;
+    height: $cote;
+}
+
+
+
+
+
+*/
+@import url(../css/reset.css);
+
+@import "header";
+

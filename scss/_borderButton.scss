@@ -1,0 +1,18 @@
+@import "colors";
+
+@mixin stylButton($colorText, $colorBg, $colorSha,$colorBgH, $colorShaH){
+    color: $colorText;
+    font-weight: 600;
+    padding-left: 10px;
+    padding-right: 10px;
+    line-height: 25px;
+    border-radius: 5px;
+
+    background-color: $colorBg;
+    box-shadow: 0px 3px $colorSha;
+    cursor: pointer;
+    &:hover{
+        background-color: $colorBgH;
+        box-shadow: 0px 3px $colorShaH;
+    }
+}
