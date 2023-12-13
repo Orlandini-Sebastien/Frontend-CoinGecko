@@ -18,8 +18,12 @@ body{
 
 
 */
-@import url(../css/reset.css);
 
+@import "reset";
 @import "0header";
 @import "1mainNav";
+@import "11advertising";
+@import "2section1";
+@import "3sectionToggle";
+
 

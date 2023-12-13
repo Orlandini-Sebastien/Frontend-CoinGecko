@@ -9,7 +9,6 @@
     width: 1300px;  
     }  
 }  
-
 header{
 
     height: $height_header;
@@ -39,5 +38,4 @@ header{
     div:nth-child(9){
         @include stylButton($color_white, $color_green_2, $color_green_4,$color_green_3,$color_green_5);
     }
-    
 }
